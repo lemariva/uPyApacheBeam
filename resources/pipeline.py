@@ -99,9 +99,9 @@ def run(argv=None):
             | 'With timestamp - ' + str(idx) >> beam.Map(
                 lambda row: beam.window.TimestampedValue(row, row[0]))
             | 'Windowing - ' + str(idx) >> beam.WindowInto(
-                        FixedWindows(1 * 1),
+                        FixedWindows(1 * 5),
                         trigger=Repeatedly(
-                             AfterAny(AfterCount(1), AfterProcessingTime(1 * 1))),
+                             AfterAny(AfterCount(10), AfterProcessingTime(1 * 5))),
                         accumulation_mode=AccumulationMode.DISCARDING)
                         #allowed_lateness=60)
             )
