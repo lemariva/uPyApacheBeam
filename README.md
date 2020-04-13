@@ -1,9 +1,5 @@
 # uPyBeam
 
-
-## Get a Google Application Credentials
-    * https://cloud.google.com/storage/docs/authentication#generating-a-private-key
-    * https://cloud.google.com/docs/authentication/getting-started
-    * https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account
-    * `export GOOGLE_APPLICATION_CREDENTIALS=~/Documents/lemariva.com/GitHub/uPyBeam/service_account.json`
-    * https://cloud.google.com/container-registry/docs/advanced-authentication
+Check these tutorials for more information:
+* [MicroPython: Google Cloud Platform getting data from an M5Stack ATOM sensing the air-quality](https://lemariva.com/blog/2020/04/micropython-google-cloud-platform-getting-data-m5stack-atom-sensing-air-quality)
+* [GCP: Firestore DB getting data from M5Stack and OpenWeatherMap synch by Apache Beam](https://lemariva.com/blog/2020/04/gcp-firestore-database-m5stack-openweathermap-apachebeam)
