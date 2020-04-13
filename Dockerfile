@@ -11,8 +11,10 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 COPY resources/pipeline.py /home/pipeline.py
-COPY resources/run-pipeline.sh /home/run-pipeline.sh
+COPY resources/run-pipeline.sh /etc/init.d/run-pipeline.sh
 
-ENTRYPOINT [ "/home/run-pipeline.sh" ]
+ENTRYPOINT [ "/etc/init.d/run-pipeline.sh" ]
+
+STOPSIGNAL SIGTERM
 
 
