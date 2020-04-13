@@ -1,6 +1,6 @@
 #! /bin/bash
 echo "starting the service ..."
-python pipeline.py --input_subs $PROJ_SUBS --project $PROJ_NAME --kind $PROJ_DBKIND --streaming
+python pipeline.py --input_subs $PROJ_SUBS --project $PROJ_NAME --kind $PROJ_DBKIND --streaming --runner DirectRunner
 
 # wait forever not to exit the container
 #while true
